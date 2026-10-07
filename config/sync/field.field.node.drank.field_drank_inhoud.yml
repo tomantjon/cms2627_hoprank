@@ -1,0 +1,23 @@
+uuid: 249cf258-d625-4d18-8770-9d0b005c3e81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drank_inhoud
+    - node.type.drank
+id: node.drank.field_drank_inhoud
+field_name: field_drank_inhoud
+entity_type: node
+bundle: drank
+label: 'Drank inhoud'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: cl
+field_type: integer

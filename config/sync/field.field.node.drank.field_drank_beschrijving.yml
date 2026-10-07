@@ -1,0 +1,22 @@
+uuid: 52bf62a1-d011-415a-803f-261172a903ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drank_beschrijving
+    - node.type.drank
+  module:
+    - text
+id: node.drank.field_drank_beschrijving
+field_name: field_drank_beschrijving
+entity_type: node
+bundle: drank
+label: 'Drank beschrijving'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

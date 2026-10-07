@@ -1,0 +1,97 @@
+uuid: 927ab998-ecc8-43ac-9330-0ef17291b15f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.drank.field_drank_afbeelding
+    - field.field.node.drank.field_drank_alcoholpercentage
+    - field.field.node.drank.field_drank_beschrijving
+    - field.field.node.drank.field_drank_inhoud
+    - field.field.node.drank.field_drank_type
+    - image.style.thumbnail
+    - node.type.drank
+  module:
+    - image
+    - path
+    - text
+id: node.drank.default
+targetEntityType: node
+bundle: drank
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_drank_afbeelding:
+    type: image_image
+    weight: 9
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_drank_alcoholpercentage:
+    type: number
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_drank_beschrijving:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_drank_inhoud:
+    type: number
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_drank_type:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

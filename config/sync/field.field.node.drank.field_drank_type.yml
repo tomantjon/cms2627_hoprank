@@ -1,0 +1,29 @@
+uuid: 904a1dbd-ad08-4bf4-939c-2f3cb351f990
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drank_type
+    - node.type.drank
+    - taxonomy.vocabulary.drank_type
+id: node.drank.field_drank_type
+field_name: field_drank_type
+entity_type: node
+bundle: drank
+label: 'Drank Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      drank_type: drank_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,17 @@
+uuid: 91eafe57-e75e-4067-a49e-b92e0a68182c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Drank
+type: drank
+description: 'Bevat alle informatie van een drank'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

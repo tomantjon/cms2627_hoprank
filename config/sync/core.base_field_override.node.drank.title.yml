@@ -1,0 +1,18 @@
+uuid: 5d6d2512-38ee-4bdd-bb6d-77018ebb5ea5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.drank
+id: node.drank.title
+field_name: title
+entity_type: node
+bundle: drank
+label: Naam
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

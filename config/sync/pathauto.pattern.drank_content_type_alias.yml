@@ -1,0 +1,23 @@
+uuid: cfa66bc9-f3c1-4105-a10b-f2c5cee026f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.drank
+  module:
+    - node
+id: drank_content_type_alias
+label: 'Drank Content Type Alias'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  61c366f4-afca-4790-9f11-193b00bb40e8:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      drank: drank
+selection_logic: and
+weight: -5
+relationships: {  }

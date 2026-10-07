@@ -1,0 +1,20 @@
+uuid: ba38e857-a6b5-4f6e-87ef-fd1e2f2c11aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_drank_alcoholpercentage
+field_name: field_drank_alcoholpercentage
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

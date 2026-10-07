@@ -1,0 +1,147 @@
+uuid: 466fabf6-872c-4745-91b3-e88131ce8b4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.drank.field_drank_afbeelding
+    - field.field.node.drank.field_drank_alcoholpercentage
+    - field.field.node.drank.field_drank_beschrijving
+    - field.field.node.drank.field_drank_inhoud
+    - field.field.node.drank.field_drank_type
+    - node.type.drank
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Afbeelding
+          context_mapping: {  }
+        components:
+          071b5b6d-1eef-4379-8e72-324e29e9ee8c:
+            uuid: 071b5b6d-1eef-4379-8e72-324e29e9ee8c
+            region: content
+            configuration:
+              id: 'field_block:node:drank:field_drank_afbeelding'
+              label: 'Drank afbeelding'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: large
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: Details
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          02540d4d-f8c2-400c-a84a-97e6b8ae720e:
+            uuid: 02540d4d-f8c2-400c-a84a-97e6b8ae720e
+            region: first
+            configuration:
+              id: 'field_block:node:drank:field_drank_type'
+              label: 'Drank Type'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          11a0a343-d536-48e5-9eba-50b0a26b85f3:
+            uuid: 11a0a343-d536-48e5-9eba-50b0a26b85f3
+            region: second
+            configuration:
+              id: 'field_block:node:drank:field_drank_inhoud'
+              label: 'Drank inhoud'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0dfa90a4-9343-4b94-a74b-c9e03f1a499d:
+            uuid: 0dfa90a4-9343-4b94-a74b-c9e03f1a499d
+            region: third
+            configuration:
+              id: 'field_block:node:drank:field_drank_alcoholpercentage'
+              label: 'Drank alcoholpercentage'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_decimal
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b5799899-b4b3-4cbc-8a99-0175d3e8c225:
+            uuid: b5799899-b4b3-4cbc-8a99-0175d3e8c225
+            region: second
+            configuration:
+              id: 'extra_field_block:node:drank:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+id: node.drank.teaser
+targetEntityType: node
+bundle: drank
+mode: teaser
+content: {  }
+hidden:
+  field_drank_afbeelding: true
+  field_drank_alcoholpercentage: true
+  field_drank_beschrijving: true
+  field_drank_inhoud: true
+  field_drank_type: true
+  links: true

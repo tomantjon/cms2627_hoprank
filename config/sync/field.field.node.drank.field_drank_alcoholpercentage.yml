@@ -1,0 +1,25 @@
+uuid: 07ef4cb9-38fd-4377-92ff-cffb5819eb6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drank_alcoholpercentage
+    - node.type.drank
+id: node.drank.field_drank_alcoholpercentage
+field_name: field_drank_alcoholpercentage
+entity_type: node
+bundle: drank
+label: 'Drank alcoholpercentage'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0.0
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: 100.0
+  prefix: ''
+  suffix: '%'
+field_type: decimal

@@ -1,0 +1,9 @@
+uuid: f7d04e92-3fa4-4ce6-8f5c-25d35d1d9363
+langcode: en
+status: true
+dependencies: {  }
+name: 'Drank Type'
+vid: drank_type
+description: 'Verzameling van alle types drank'
+weight: 0
+new_revision: false

@@ -1,0 +1,22 @@
+uuid: 150ce771-0fe8-4535-a841-17cefb42fe64
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.drank
+id: node.drank.promote
+field_name: promote
+entity_type: node
+bundle: drank
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
