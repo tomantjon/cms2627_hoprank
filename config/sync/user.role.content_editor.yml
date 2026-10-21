@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.drank
+    - taxonomy.vocabulary.drank_type
     - taxonomy.vocabulary.tags
   module:
     - contextual
@@ -16,7 +18,7 @@ _core:
   default_config_hash: og55Zu0F-q-X8zG0Ohrls49zws6IrmmosZS-30Es8vw
 id: content_editor
 label: 'Content editor'
-weight: 2
+weight: -7
 is_admin: false
 permissions:
   - 'access administration pages'
@@ -25,11 +27,21 @@ permissions:
   - 'access files overview'
   - 'access navigation'
   - 'administer url aliases'
+  - 'create drank content'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'delete any drank content'
+  - 'delete drank revisions'
+  - 'delete own drank content'
   - 'delete own files'
+  - 'delete terms in drank_type'
+  - 'delete terms in tags'
+  - 'edit any drank content'
+  - 'edit own drank content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'revert drank revisions'
   - 'view all revisions'
+  - 'view drank revisions'
   - 'view own unpublished content'
   - 'view the administration theme'

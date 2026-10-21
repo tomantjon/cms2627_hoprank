@@ -1,0 +1,28 @@
+uuid: 22a6269b-f0d3-47d7-a673-e6a4a29bd988
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.drank
+  module:
+    - contextual
+    - file
+    - navigation
+    - node
+    - system
+id: drankbeheerder
+label: Drankbeheerder
+weight: -8
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access navigation'
+  - 'create drank content'
+  - 'delete own drank content'
+  - 'edit any drank content'
+  - 'edit own drank content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/recommended-project',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '03f9344b31012e62017bac7241d118fac75575aa',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'd4f8f1cb7e267c599cef432aaf793fbc047b5079',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -379,6 +379,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/masquerade' => array(
+            'pretty_version' => '2.2.0',
+            'version' => '2.2.0.0',
+            'reference' => '8.x-2.2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/masquerade',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/pathauto' => array(
             'pretty_version' => '1.15.0',
             'version' => '1.15.0.0',
@@ -389,9 +398,9 @@
             'dev_requirement' => false,
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '03f9344b31012e62017bac7241d118fac75575aa',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'd4f8f1cb7e267c599cef432aaf793fbc047b5079',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -1,0 +1,14 @@
+uuid: c04b32ab-1b90-406a-a06d-8457ee9e239a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.drankbeheerder
+  module:
+    - user
+id: user_add_role_action.drankbeheerder
+label: 'Add the Drankbeheerder role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: drankbeheerder
